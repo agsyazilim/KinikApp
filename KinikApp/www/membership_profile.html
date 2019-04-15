@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; script-src *; style-src *; img-src *; font-src data: https://fonts.googleapis.com/css?family=Roboto:300 400 500 700 900 https://fonts.googleapis.com/icon?family=Material+Icons">-->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Kınık Haber</title>
+</head>
+<body>
+    <div class="app">
+        <div id="main">
+            <!-- LEFT SIDEBAR -->
+            <div id="slide-out-left" class="sidenav">
+                <!-- Sidebar profile -->
+                <div class="top-left-nav">
+                    <div class="thumb">
+                        <img src="images/no-img.jpg" alt="">
+                    </div>
+                    <div class="caption">
+                        <span>Merhaba,</span>
+                        <h4 class="name">Misafir</h4>
+                    </div>
+                    <div class="btn-nav">
+                        <a href="#!" class="btn">Giriş</a>
+                    </div>
+                </div><!-- .top-left-nav -->
+                <!-- App/Site Menu -->
+                <div id="main-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="icon fa fa-home"></i>Anasayfa</a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="news.html"><i class="icon fa fa-newspaper-o"></i>Haberler</a>
+                            <ul>
+                                <li><a href="news_sondakika.html?name=breaknews">Son Dakika Haberleri</a></li>
+                                <li><a href="news_sondakika.html?name=gundem">Gündem</a></li>
+                                <li><a href="news_sondakika.html?name=siyaset">Siyaset</a></li>
+                                <li><a href="news_sondakika.html?name=bolge">Bölge Haberleri</a></li>
+                                <li><a href="news_sondakika.html?name=populer">Populer Haberler</a></li>
+                                <li><a href="news_category.html">Haber Kategorileri</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="gallery.html"><i class="icon fa fa-camera"></i> Galeriler</a>
+                            <ul>
+                                <li><a href="gallery_page.html">Foto Galeri</a></li>
+                                <li><a href="gallery_photo.html">Video Galeri</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="yazarlar.html"><i class="icon fa fa-user-o"></i> Yazarlarımız</a>
+                            <ul>
+                                <li><a href="kose_liste.html">Köşe Yazıları</a></li>
+                                <li><a href="yazar_listesi.html">Yazar Listesi</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="faydali.html"><i class="icon fa fa-files-o"></i> Faydalı Bilgiler</a>
+                            <ul>
+                                <li><a href="namaz.html">Namaz Vakitleri</a></li>
+                                <li><a href="hava.html">Hava Durumu</a></li>
+                                <li><a href="firma.html">Firma Rehberi</a></li>
+                                <li><a href="nobetci.html">Nöbetçi Firmalar</a></li>
+                                <li><a href="doviz.html">Döviz</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub direct-dropdown">
+                            <a href="#"><i class="icon fa fa-users"></i> Kullanıcı <span class="badge">işlemleri</span></a>
+                            <ul>
+                                <li><a href="membership_login.html">Giriş</a></li>
+                                <li><a href="membership_signup.html">Kayıt</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="about-us.html"><span class="icon fa fa-drivers-license-o"></span> Hakkımızda</a></li>
+                        <li><a href="contact.html"><span class="icon fa fa-envelope-open-o"></span> iletişim</a></li>
+                    </ul>
+                </div>
+                <!-- End Site/App Menu -->
+                <div class="sidenav-section footer">
+                    <div class="copyright">
+                        Copyright &copy; 2019 kınık haber online
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- END LEFT SIDEBAR -->
+            <!-- MAIN PAGE -->
+            <!-- Class .fixed-navbar is set for .top-navbar & .content-container as floating navbar
+            Put this class to make navbar fixed or remove this.
+            -->
+            <div id="page" class="dark-bg">
+
+                <!-- FIXED Top Navbar -->
+                <div class="top-navbar-container">
+                    <div class="navbar">
+                        <div class="navleft">
+                            <a href="#" class="open-sidenav">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="navright">
+                            <a href="#" class="show-search">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="#!" class="close-sidenav">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div class="app-title">
+                            <h1>Kınık<span>Haber</span></h1>
+                        </div>
+                    </div>
+
+                    <div class="searchbar">
+                        <input type="text" placeholder="ara...."><button type="button" class="btn"><i class="fa fa-search"></i></button>
+                    </div>
+
+                </div>
+                <!-- End FIXED Top Navbar -->
+                <!-- Slider -->
+                <div class="home-slider2 animated fadeInRight">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="images/no-img_720x480.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <div class="category orange-text text-lighten-2">
+                                International
+                            </div>
+                            <div class="meta">
+                                August 30, 2018 | 05:56
+                            </div>
+                            <div class="entry-title">
+                                <a href="#!">Russia on Nuclear Missiles at Denmark Ships</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="images/no-img_720x480.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <div class="category green-text text-lighten-2">
+                                Football
+                            </div>
+                            <div class="meta">
+                                August 30, 2018 | 05:56
+                            </div>
+                            <div class="entry-title">
+                                <a href="#!">Joao Pedro suspended after Cagliari star fails drugs test</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="images/no-img_720x480.jpg" alt="">
+                        </div>
+                        <div class="caption">
+                            <div class="category red-text text-lighten-2">
+                                National
+                            </div>
+                            <div class="meta">
+                                August 30, 2018 | 05:56
+                            </div>
+                            <div class="entry-title">
+                                <a href="#!">Indian military called in to help flood-hit north-east</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slider -->
+
+                <div class="animated fadeInUp">
+
+                    <!-- Latest section -->
+                    <div class="section">
+
+                        <div class="title-container no-p">
+                            <h3 class="section-title">
+                                Latest
+                            </h3>
+                        </div>
+
+                        <div class="small-listing">
+                            <div class="item first-child">
+                                <a class="post-thumb" href="#!">
+                                    <img src="images/no-img_90x94.jpg" alt="">
+                                </a>
+                                <div class="post-content">
+                                    <div class="category orange-text">
+                                        News
+                                    </div>
+                                    <div class="meta">
+                                        August 30, 2018 | 05:56
+                                    </div>
+                                    <div class="entry-title">
+                                        <a href="#!">This is Why a US-Chinese 'Trade War' Under Trump Unlikely to Happen</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="post-thumb" href="#!">
+                                    <img src="images/no-img_90x94.jpg" alt="">
+                                </a>
+                                <div class="post-content">
+                                    <div class="category cyan-text">
+                                        Tech
+                                    </div>
+                                    <div class="meta">
+                                        August 30, 2018 | 05:56
+                                    </div>
+                                    <div class="entry-title">
+                                        <a href="#!">Bill Moggridge, the inventor of the modern laptop computer, dies</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="post-thumb" href="#!">
+                                    <img src="images/no-img_90x94.jpg" alt="">
+                                </a>
+                                <div class="post-content">
+                                    <div class="category orange-text">
+                                        News
+                                    </div>
+                                    <div class="meta">
+                                        August 30, 2018 | 05:56
+                                    </div>
+                                    <div class="entry-title">
+                                        <a href="#!">Anti-austerity protest turns violent</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="post-thumb" href="#!">
+                                    <img src="images/no-img_90x94.jpg" alt="">
+                                </a>
+                                <div class="post-content">
+                                    <div class="category green-text">
+                                        Football
+                                    </div>
+                                    <div class="meta">
+                                        August 30, 2018 | 05:56
+                                    </div>
+                                    <div class="entry-title">
+                                        <a href="#!">England's Alex Oxlade-Chamberlain has extra incentive to reach Brazil 2014</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a class="post-thumb" href="#!">
+                                    <img src="images/no-img_90x94.jpg" alt="">
+                                </a>
+                                <div class="post-content">
+                                    <div class="category blue-text">
+                                        Finance
+                                    </div>
+                                    <div class="meta">
+                                        August 30, 2018 | 05:56
+                                    </div>
+                                    <div class="entry-title">
+                                        <a href="#!">Lawmakers Pass Spending Bill With Funds for Clean Energy</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-20">
+                            <a class="btn block" href="#!"><span class="load-more">Load more</span></a>
+                        </div>
+
+                    </div>
+                    <!-- End Latest section -->
+                    <!-- Popular section -->
+                    <div class="section no-pl no-pr no-pb">
+
+                        <div class="title-container no-pt no-pb">
+                            <h3 class="section-title">
+                                Popular
+                            </h3>
+                        </div>
+
+                        <ul class="tabs">
+                            <li class="tab"><a class="active" href="#article">Article</a></li>
+                            <li class="tab"><a href="#issue">Issue</a></li>
+                        </ul>
+
+                        <div class="tabs-content pl-20 pr-20">
+                            <div id="article">
+                                <div class="small-listing">
+                                    <div class="item">
+                                        <a class="post-thumb" href="#!">
+                                            <img src="images/no-img_90x94.jpg" alt="">
+                                        </a>
+                                        <div class="post-content">
+                                            <div class="category blue-text">
+                                                Finance
+                                            </div>
+                                            <div class="meta">
+                                                August 30, 2018 | 05:56
+                                            </div>
+                                            <div class="entry-title">
+                                                <a href="#!">Lawmakers Pass Spending Bill With Funds for Clean Energy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a class="post-thumb" href="#!">
+                                            <img src="images/no-img_90x94.jpg" alt="">
+                                        </a>
+                                        <div class="post-content">
+                                            <div class="category green-text">
+                                                Football
+                                            </div>
+                                            <div class="meta">
+                                                August 30, 2018 | 05:56
+                                            </div>
+                                            <div class="entry-title">
+                                                <a href="#!">England's Alex Oxlade-Chamberlain has extra incentive to reach Brazil 2014</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a class="post-thumb" href="#!">
+                                            <img src="images/no-img_90x94.jpg" alt="">
+                                        </a>
+                                        <div class="post-content">
+                                            <div class="category orange-text">
+                                                News
+                                            </div>
+                                            <div class="meta">
+                                                August 30, 2018 | 05:56
+                                            </div>
+                                            <div class="entry-title">
+                                                <a href="#!">Anti-austerity protest turns violent</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a class="post-thumb" href="#!">
+                                            <img src="images/no-img_90x94.jpg" alt="">
+                                        </a>
+                                        <div class="post-content">
+                                            <div class="category green-text">
+                                                Football
+                                            </div>
+                                            <div class="meta">
+                                                August 30, 2018 | 05:56
+                                            </div>
+                                            <div class="entry-title">
+                                                <a href="#!">Joao Pedro suspended after Cagliari star fails drugs test</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="issue">
+
+                                <ul class="issue-list">
+                                    <li class="first-child">
+                                        <a href="#!">America's Foreign Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">50M Facebook user data harvested</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Neymar transfer saga</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Hollywood sexual harrasment scandal</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Popular section -->
+                    <!-- Media Section -->
+                    <div class="section grey darken-3 no-pl no-pr">
+
+                        <div class="title-container no-pt no-pb">
+                            <h3 class="section-title">
+                                Media
+                            </h3>
+                        </div>
+
+                        <ul class="card-list scrollable pr-20 pl-20">
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-video-camera"></i></span>
+                                            <span class="desc">01:20</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category light-green-text">
+                                            Opinion
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">The Queen's wisdom is best kept private</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-camera"></i></span>
+                                            <span class="desc">5 Photos</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category pink-text">
+                                            Entertainment
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">Astrology Of Love Sex And Seduction: Scorpio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-camera"></i></span>
+                                            <span class="desc">12 Photos</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category green-text">
+                                            Football
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">Liomel Mekki is an alien from another planet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-video-camera"></i></span>
+                                            <span class="desc">03:22</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category light-blue-text">
+                                            Telecomunication
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">Drone buying tips for first-time flyers</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-video-camera"></i></span>
+                                            <span class="desc">01:30</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category lime-text">
+                                            Business
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">UK's largest steel CEO says tariffs are first step in</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-camera"></i></span>
+                                            <span class="desc">9 Photos</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category blue-text">
+                                            Finance
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">Private credit is booming as new hedge funds pile in</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/no-img_270x180.jpg" alt="">
+                                        <div class="media-caption">
+                                            <span class="icon"><i class="fa fa-camera"></i></span>
+                                            <span class="desc">7 Photos</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="category teal-text">
+                                            Editorial
+                                        </div>
+                                        <div class="meta">
+                                            August 30, 2018 | 05:56
+                                        </div>
+                                        <div class="entry-title">
+                                            <a href="#!">Glencore trims takeover plans for Kazakh miner</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- End Media Section -->
+
+                </div><!-- .animated fadeInUp -->
+
+            </div>
+            <!-- END MAIN PAGE -->
+            <!-- FOOTER -->
+            <div class="footer dark">
+                Copyright &copy; 2018
+            </div>
+            <!-- End FOOTER -->
+            <!-- Back to top Link -->
+            <div id="to-top" class="main-bg">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+
+        </div><!-- #main -->
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="scripts/materialize/js/materialize.min.js"></script>
+    <script src="scripts/slick/js/slick.min.js"></script>
+    <script src="scripts/swipebox/js/jquery.swipebox.js"></script>
+    <script src="scripts/custom.js"></script>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+</html>

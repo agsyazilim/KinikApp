@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; script-src *; style-src *; img-src *; font-src data: https://fonts.googleapis.com/css?family=Roboto:300 400 500 700 900 https://fonts.googleapis.com/icon?family=Material+Icons">-->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Kınık Haber</title>
+</head>
+<body>
+    <div class="app">
+        <div id="main">
+            <!-- LEFT SIDEBAR -->
+            <div id="slide-out-left" class="sidenav">
+                <!-- Sidebar profile -->
+                <div class="top-left-nav">
+                    <div class="thumb">
+                        <img src="images/no-img.jpg" alt="">
+                    </div>
+                    <div class="caption">
+                        <span>Merhaba,</span>
+                        <h4 class="name">Misafir</h4>
+                    </div>
+                    <div class="btn-nav">
+                        <a href="#!" class="btn">Giriş</a>
+                    </div>
+                </div><!-- .top-left-nav -->
+                <!-- App/Site Menu -->
+                <div id="main-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="icon fa fa-home"></i>Anasayfa</a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="news.html"><i class="icon fa fa-newspaper-o"></i>Haberler</a>
+                            <ul>
+                                <li><a href="news_sondakika.html?name=breaknews">Son Dakika Haberleri</a></li>
+                                <li><a href="news_sondakika.html?name=gundem">Gündem</a></li>
+                                <li><a href="news_sondakika.html?name=siyaset">Siyaset</a></li>
+                                <li><a href="news_sondakika.html?name=bolge">Bölge Haberleri</a></li>
+                                <li><a href="news_sondakika.html?name=populer">Populer Haberler</a></li>
+                                <li><a href="news_category.html">Haber Kategorileri</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="gallery.html"><i class="icon fa fa-camera"></i> Galeriler</a>
+                            <ul>
+                                <li><a href="gallery_page.html">Foto Galeri</a></li>
+                                <li><a href="gallery_photo.html">Video Galeri</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="yazarlar.html"><i class="icon fa fa-user-o"></i> Yazarlarımız</a>
+                            <ul>
+                                <li><a href="kose_liste.html">Köşe Yazıları</a></li>
+                                <li><a href="yazar_listesi.html">Yazar Listesi</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="faydali.html"><i class="icon fa fa-files-o"></i> Faydalı Bilgiler</a>
+                            <ul>
+                                <li><a href="namaz.html">Namaz Vakitleri</a></li>
+                                <li><a href="hava.html">Hava Durumu</a></li>
+                                <li><a href="firma.html">Firma Rehberi</a></li>
+                                <li><a href="nobetci.html">Nöbetçi Firmalar</a></li>
+                                <li><a href="doviz.html">Döviz</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has-sub direct-dropdown">
+                            <a href="#"><i class="icon fa fa-users"></i> Kullanıcı <span class="badge">işlemleri</span></a>
+                            <ul>
+                                <li><a href="membership_login.html">Giriş</a></li>
+                                <li><a href="membership_signup.html">Kayıt</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="about-us.html"><span class="icon fa fa-drivers-license-o"></span> Hakkımızda</a></li>
+                        <li><a href="contact.html"><span class="icon fa fa-envelope-open-o"></span> iletişim</a></li>
+                    </ul>
+                </div>
+                <!-- End Site/App Menu -->
+                <div class="sidenav-section footer">
+                    <div class="copyright">
+                        Copyright &copy; 2019 kınık haber online
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="page" class="dark-bg">
+                <div class="top-navbar-container">
+                    <div class="navbar">
+                        <div class="navleft">
+                            <a href="#" class="open-sidenav">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="navright">
+                            <a href="#" class="show-search">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <a href="#!" class="close-sidenav">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div class="app-title">
+                            <h1>Kınık<span>Haber</span></h1>
+                        </div>
+                    </div>
+
+                    <div class="searchbar">
+                        <input type="text" placeholder="ara...."><button type="button" class="btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="title-container grey">
+                    <h1 class="page-title animated fadeInRight">Videolar</h1>
+                </div>
+                <div class="gallery-container animated fadeInUp">
+                    <div class="section pb-30">
+                        <div class="gallery-related-list"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer dark">
+                Copyright &copy; 2019 Kınık Haber
+            </div>
+            <div id="to-top" class="main-bg">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script src="scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="scripts/materialize/js/materialize.min.js"></script>
+    <script src="scripts/slick/js/slick.min.js"></script>
+    <script src="scripts/swipebox/js/jquery.swipebox.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/pagejs/video-galeri.js"></script>
+</body>
+</html>

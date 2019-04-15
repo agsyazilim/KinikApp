@@ -1,0 +1,22 @@
+{
+    "name": "KinikApp",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "cordova-android": "^5.2.1",
+        "cordova-ios": "^5.0.0",
+        "cordova-plugin-whitelist": "^1.2.2",
+        "cordova-windows": "^4.4.3"
+    },
+    "cordova": {
+        "platforms": [
+            "android",
+            "windows",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        }
+    },
+    "devDependencies": {}
+}
